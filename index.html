@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title>Crash Course HTML</title>
+    </head>
+    <body>
+        <!-- 
+            1.  Ấn nút Tab sau khi gõ xong head. kết quả sẽ là <head><head>
+            2.  Cấn CTRL U để view HTML source.
+            3.  Ấn F12 để bật Developmet Tool
+            4.  Thêm target = "_blank" để nó ko mất tab cũ khi ấn vào link đằng trước
+         -->
+            <h1 style="text-align:center;">WELCOME TO INDEX</h1>
+            <hr>
+
+         <a href="myblog.html">Go to my blog</a>
+         <p>Lorem ipsum <strong>, sit amet consectetur</strong> adipisicing elit. Aliquid rem fugit natus <a href="https://www.google.com" target="_blank">officiis</a> odit molestias omnis veniam harum consectetur <em>consequuntur eum adipisci,</em> facere quibusdam? Esse commodi architecto et quidem. Repudiandae?</p>
+
+
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid rem fugit natus <a href="https://www.google.com">officiis</a> odit molestias omnis veniam harum consectetur consequuntur eum adipisci, facere quibusdam? Esse commodi architecto et quidem. Repudiandae?</p>
+
+         <br>
+         <hr>
+         <!-- Unordered List <ul> -->
+             <h1>Demo Danh Sách không có thứ tự</h1>
+        <ul>
+            <li>Smoke House Burger</li>
+            <li>Popcorn Chiken</li>
+            <li>Sprite</li>
+            <li>PullPork Sandwich</li>
+            <li>Pork Burrito</li>
+        </ul>
+        <br>
+        <hr>
+        <!-- Ordered List <ol> -->
+            <h1>Demo Danh Sách Có thứ tự</h1>
+        <ol>
+            <li>Smoke House Burger</li>
+            <li>Popcorn Chiken</li>
+            <li>Sprite</li>
+            <li>PullPork Sandwich</li>
+            <li>Pork Burrito</li>
+        </ol>
+        <!--Table-->
+        <br>
+        <hr>
+        <h1>Demo Table</h1>
+            <table>
+                <thead>
+                        <!-- create table row by <tr> R: Row -->
+                    <tr> 
+                        <!-- Mỗi heading sẽ có một <th> tag -->
+                        <th>Tên</th>
+                        <th>Tuổi</th>
+                        <th>Địa chỉ</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <!-- create data by <td> tag D: Data 
+                            Tips: Ấn CTRL + Enter để ko phải dùng chuột
+                        xuống dòng-->
+                        <td>Lê Viết Đức</td>
+                        <td>23</td>
+                        <td>Hải Dương</td>
+                    </tr>
+                    <tr>
+                        <td>Lê Viết Thọ</td>
+                        <td>29</td>
+                        <td>Hải Dương</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <hr>
+            <h1> Demo input</h1>
+            <!-- Forms -->
+            
+            <form action="process.php" method="GET">
+               <div>
+                <label>Nhập Tên</label>
+                <input type="text" name="name" placeholder="Enter your name"> 
+               </div> <br>
+
+
+               <div>
+                <label>Ngày Sinh</label>
+                <input type="date" name="birthday" placeholder=" Enter your birthday">
+               </div><br>
+
+
+               <div>
+                <label>Giới Tính</label>
+                    <select name="gender">
+                        <option value ="male">Male</option>
+                        <option value ="fmale">Female</option>
+                        <option value ="other">Other</option>
+                    </select>
+               </div><br>
+
+
+               <div>
+                <label>Nhập Địa Chỉ</label>
+                <input type="text" name="address" placeholder="Enter Your Address">
+                </div><br>
+
+
+               <div>
+                <label>Nhập Email</label>
+                <input type="email" name="email" placeholder="Enter Your Email" >
+                </div><br> 
+
+
+               <div>
+                <label>Tin nhắn</label>
+                <textarea name="message" placeholder="Enter Your Message Here" ></textarea>
+                </div><br>
+
+               <input type="submit" name="submit" value="Submit"> 
+            </form>
+                <hr>
+            <!-- Images -->
+            <!-- <img src="C:/Users/Admin/Desktop/sample.jpg"> -->
+                <h1>Images Demos</h1>
+                <br>
+            <!--Thêm alt để nếu nhớ có mất ảnh thì còn biết đó là ảnh gì-->
+            <p>Ảnh này không có link</p>
+            <img src="images/sample.jpg" width="400px" height="300px" alt=" Ảnh Huyền" >
+                <br>
+            <!--Vẫn là ảnh nhưng có thể ấn vào và mở ra một trang mới để xem ảnh-->
+            <p>Ảnh này có link</p>
+            <a href="images/windows-10-uhd-4k-wallpaper.jpg" target="_blank"><img src="images/windows-10-uhd-4k-wallpaper.jpg" width="400px" alt="Windows wallpaper"></a>
+
+            <!-- Quotations -->
+            <p>Dưới đây là một câu trích dẫn</p>
+            <blockquote cite="www.googe.com">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis harum tempore, doloribus quidem asperiores rem incidunt consequuntur molestias adipisci placeat eligendi praesentium. Provident vel, inventore a ut placeat tenetur deserunt?
+            </blockquote>
+            <!-- Mô tả  -->
+            
+            <p><abbr title="Một thanh niên lười biếng, tham ăn và hay ngủ">Đức</abbr> thật là đẹp trai</p>
+
+
+            <div style="margin-top: 1000px;"></div>
+    </body>
+</html>
